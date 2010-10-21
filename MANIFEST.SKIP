@@ -1,0 +1,8 @@
+MANIFEST\.SKIP
+.*~
+ignore\.txt
+\.gitignore
+t/boilerplate\.t
+t/manifest\.t
+t/pod-coverage\.t
+t/pod\.t
