@@ -2,7 +2,7 @@
 use common::sense;
 
 use lib '..';
-use Test::More tests => 8;
+use Test::More;
 
 use Coro::Amazon::SimpleDB;
 use List::Util qw(first max);
