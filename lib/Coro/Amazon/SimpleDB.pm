@@ -1,7 +1,7 @@
 package Coro::Amazon::SimpleDB;
 use common::sense;
 
-$Coro::Amazon::SimpleDB::VERSION = 0.01;
+$Coro::Amazon::SimpleDB::VERSION = 0.03;
 
 use EV;
 use AnyEvent;
@@ -554,7 +554,7 @@ L<http://search.cpan.org/dist/Coro-Amazon-SimpleDB/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2010 David Trischuk
+Copyright 2010 Campus Explorer http://www.campusexplorer.com/
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of either: the GNU General Public License Version
