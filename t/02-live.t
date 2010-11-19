@@ -52,8 +52,12 @@ my $untaint_regexp = qr{\A ([[:word:]+-]+) : ([[:word:]+-]+) : ([[:word:]+-]+) \
 my ($key, $secret_key, $domain)
     = untaint join(':', @ENV{qw(AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SIMPLEDB_DOMAIN)}), $untaint_regexp;
 
-plan(skip_all => "missing key or domain for live test")
-    unless $key and $secret_key and $domain;
+if ($key and $secret_key and $domain) {
+    plan tests => 8;
+}
+else {
+    plan(skip_all => "missing key or domain for live test");
+}
 
 my $sdb = Coro::Amazon::SimpleDB->new;
 $sdb->aws_access_key($key);
