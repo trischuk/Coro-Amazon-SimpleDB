@@ -1,7 +1,7 @@
 package Coro::Amazon::SimpleDB;
 use common::sense;
 
-$Coro::Amazon::SimpleDB::VERSION = 0.03;
+$Coro::Amazon::SimpleDB::VERSION = 0.04;
 
 use EV;
 use AnyEvent;
